@@ -26,6 +26,6 @@ public class Pot_Growth : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         gameObject.SetActive(false);
-        GameManager.Instance.PotGrow();
+        GameManager.Instance.PotGrow(transform.position);
     }
 }
